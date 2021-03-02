@@ -434,6 +434,38 @@ li {
   height: 591px;
   margin-bottom: 40px;
   background-image: url('../resource/shu.png');
+  position: relative;
+}
+
+.shu .left,
+.shu .right {
+  position: absolute;
+  left: 30px;
+  width: 400px;
+  top: 65px;
+  height: 440px;
+  overflow: auto;
+}
+
+.shu .left span,
+.shu .right span,
+.shu .left a,
+.shu .right a {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+  color: #80623b;
+}
+
+.shu .left h2,
+.shu .right h2 {
+  color: #80623b;
+  line-height: 60px;
+}
+
+.shu .right {
+  left: auto;
+  right: 30px;
 }
 
 .ziceti {
@@ -473,5 +505,89 @@ li {
 .xuexi-box,
 .rwcl-box {
   margin-bottom: 40px;
+}
+
+.yuanqiu {
+  background-image: url('../resource/yuanqiu.png');
+  width: 1919px;
+  height: 1181px;
+  position: relative;
+}
+
+.yuanqiu .swiper-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('../resource/bar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.yuanqiu .swiper-slide {
+  background-image: url('../resource/zhuangshi.png');
+  background-repeat: no-repeat;
+  background-position: 185px center;
+  position: relative;
+}
+
+.yuanqiu .show-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: 250px;
+  top: 295px;
+  height: 156px;
+  transition: all 0.5s;
+}
+
+.yuanqiu .show-text {
+  position: absolute;
+  bottom: 220px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.yuanqiu span {
+  color: #594224;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  left: 136px;
+  top: 571px;
+}
+
+.yuanqiu .swiper-slide-active + .swiper-slide + .swiper-slide .show-img {
+  width: 376px;
+  height: 235px;
+  top: 200px;
+}
+
+.yuanqiu .swiper-slide-active + .swiper-slide + .swiper-slide .show-text {
+  width: 320px;
+  height: 255px;
+  bottom: 200px;
+}
+
+.yuanqiu .left-button {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.yuanqiu .right-button {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+  cursor: pointer;
 }
 

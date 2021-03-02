@@ -14,6 +14,49 @@
         img.so.so-9.hover-button(src="@|808.png|" o-hover="grow")
         img.so.so-10.hover-button(src="@|806.png|" o-hover="grow")
         img.so.so-11(src="@|78.png|")
+  //- 历史大事记
+  .scale-box
+    .yuanqiu
+      img.left-button(src="@|left.png|" o-hover="grow" onclick="leftClick()")
+      img.right-button(src="@|right.png|" o-hover="grow" onclick="rightClick()")
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            span 1995
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 1996
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 1997
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 1998
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 1999
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 2000
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 2001
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 2002
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
+          .swiper-slide
+            span 2003
+            img.show-img(src="@|show-img.png|" width="380" height="240")
+            img.show-text(src="@|show-text.png|" width="268" height="214")
   .w1000
     //- 中国共产党历史知识问答
     .title-bar
@@ -330,6 +373,46 @@
     .w1000
       //- 共产党简史
       .shu
+        .left
+          h2 中国共产党前言
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+        .right
+          h2 中国共产党前言
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
+          span
+            a(href="#") 第一章 中国共产党的创立和投身大革命的洪流
       .title-bar
         img(src="@|title-5.png|")
       //- 自测题
@@ -656,7 +739,30 @@
   width: 1000px;
   height: 591px;
   margin-bottom: 40px;
-  background-image: url('@|shu.png|')
+  background-image: url('@|shu.png|');
+  position: relative;
+  .left, .right {
+    position: absolute;
+    left: 30px;
+    width: 400px;
+    top: 65px;
+    height: 440px;
+    overflow: auto;
+    span, a {
+      display:  block;
+      font-size: 18px;
+      line-height: 40px;
+      color: #80623b;
+    }
+    h2 {
+      color: #80623b;
+      line-height: 60px;
+    }
+  }
+  .right {
+    left: auto;
+    right: 30px;
+  }
 }
 .ziceti {
   background-image: url('@|ziceti.png|');
@@ -690,5 +796,81 @@
 }
 .xuexi-box, .rwcl-box {
   margin-bottom: 40px;
+}
+.yuanqiu {
+  background-image: url('@|yuanqiu.png|');
+  width: 1919px;
+  height: 1181px;
+  position: relative;
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('@|bar.png|');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .swiper-slide {
+    background-image: url('@|zhuangshi.png|');
+    background-repeat: no-repeat;
+    background-position: 185px center;
+    position: relative;
+  }
+  .show-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 250px;
+    top: 295px;
+    height: 156px;
+    transition: all 0.5s;
+  }
+  .show-text {
+    position: absolute;
+    bottom: 220px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s;
+  }
+  span {
+    color: #594224;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 136px;
+    top: 571px;
+  }
+  .swiper-slide-active + .swiper-slide + .swiper-slide {
+    .show-img {
+      width: 376px;
+      height: 235px;
+      top: 200px;
+    }
+    .show-text {
+      width: 320px;
+      height: 255px;
+      bottom: 200px;
+    }
+  }
+  .left-button {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .right-button {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+    cursor: pointer;
+  }
 }
 </style>

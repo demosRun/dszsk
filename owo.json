@@ -65,6 +65,10 @@
 			"src": "https://cunchu.site/owo/script/idangerous.swiper2.7.6.min.js"
 		},
 		{
+			"name": "jquery1.11.0",
+			"src": "https://cunchu.site/owo/script/jquery-1.11.1.min.js"
+		},
+		{
 			"name": "main",
 			"src": "./src/main.js",
 			"resource": true
@@ -126,13 +130,7 @@
 			"merge": false,
 			"allAnimate": false,
 			"title": "{TAG_14226_TAG}",
-			"handleLink": true,
-			"scriptList": [
-				{
-					"name": "jquery1.11.0",
-					"src": "https://cunchu.site/owo/script/jquery-1.11.1.min.js"
-				}
-			]
+			"handleLink": true
 		}
 	}
 }
