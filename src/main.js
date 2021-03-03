@@ -131,6 +131,7 @@ function creatDate(data) {
     document.querySelector('.right-panel .conn').innerHTML = data[activeIndexDate]
   } else {
     document.querySelector('.right-panel .conn').innerHTML = '当日暂无内容！'
+    return
   }
   if (!data[activeIndexDate - 1]) {
     document.querySelector('.syy').style.display = 'none'
