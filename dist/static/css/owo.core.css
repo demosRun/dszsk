@@ -591,3 +591,57 @@ li {
   cursor: pointer;
 }
 
+.rili {
+  margin-bottom: 40px;
+}
+
+.rili .left {
+  background-image: url('../resource/rili.png');
+  width: 437px;
+  height: 363px;
+  position: relative;
+}
+
+.right-panel {
+  width: 554px;
+  height: 356px;
+  margin-top: 7px;
+  position: relative;
+  background-image: url('../resource/right-panel.png');
+}
+
+.right-panel .conn {
+  position: absolute;
+  left: 40px;
+  top: 65px;
+  width: 460px;
+  height: 260px;
+  overflow: auto;
+}
+
+.right-panel .conn h2 {
+  color: #c5983e;
+  line-height: 50px;
+}
+
+.right-panel .conn p {
+  line-height: 28px;
+  font-size: 18px;
+  text-indent: 2em;
+  color: #594224;
+}
+
+.xyy {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.syy {
+  position: absolute;
+  right: 110px;
+  bottom: 10px;
+  cursor: pointer;
+}
+

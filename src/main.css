@@ -115,3 +115,110 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .zyhy-table-box .item p {
   float: left;
 }
+
+
+/* 日历样式 */
+
+.calendar{
+  width: 360px;
+  height: 285px;
+  background: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 36px;
+}
+
+.title{
+  height: 70px;
+  border-bottom: 2px solid #ccb076;
+  position: relative;
+  text-align: center;
+}
+
+#calendar-title{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 14px 0 0 0;
+  line-height: 57px;
+}
+
+#calendar-year{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#pre{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url('@|rili-left.png|') no-repeat 50% 50%;
+
+  /*没规定大小时，图片显示 0X0*/
+  width: 60px;
+  height: 70px;
+  
+}
+
+#next{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: url('@|rili-left.png|') no-repeat 50% 50%;
+  width: 60px;
+  height: 70px;
+  transform: rotate(180deg);
+}  
+
+.body-list ul{
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+
+}  
+
+.body-list ul li{
+  list-style: none;
+  /*
+  display:inline-block; 
+  width: 13.3%;
+  */
+
+  /*100/7 = 14.28%*/
+  display: block;
+  width: 14.28%;
+  float: left;
+
+  /*规定行高，垂直居中*/
+  height: 32px;
+  line-height: 32px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+
+.green{
+  color:#6ac13c;
+}
+
+.lightgrey{ /*浅灰色显示过去的日期*/
+color:#333;
+cursor: pointer;
+}   
+.darkgrey{ /*深灰色显示将来的日期*/
+  color: #999;
+}
+
+/*日期当天用绿色背景绿色文字加以显示*/
+.active {
+  background-image: url('@|dian.png|');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}

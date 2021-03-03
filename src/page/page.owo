@@ -15,6 +15,41 @@
         img.so.so-10.hover-button(src="@|806.png|" o-hover="grow")
         img.so.so-11(src="@|78.png|")
   //- 历史大事记
+  .w1000
+    .rili.clear
+      .left.fl
+        <div class="calendar">
+          <div class="title">
+              <h1 class="green" id="calendar-title">Month</h1>
+              <h2 class="green" style="display: none;" id="calendar-year">Year</h2>
+              <a href="" id="pre"></a>
+              <a href="" id="next"></a>
+          </div>
+  
+          <div class="body">
+            <div class="lightgrey body-list">
+              <ul>
+                <li>日</li>
+                <li>一</li>
+                <li>二</li>
+                <li>三</li>
+                <li>四</li>
+                <li>五</li>
+                <li>六</li> 
+              </ul>
+            </div>
+
+            <div class="darkgrey body-list">
+              <ul id="days">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      .right-panel.fr
+        img.syy(src="@|syy.png|" onclick="syy()")
+        img.xyy(src="@|xyy.png|" onclick="xyy()")
+        .conn
   .scale-box
     .yuanqiu
       img.left-button(src="@|left.png|" o-hover="grow" onclick="leftClick()")
@@ -872,5 +907,51 @@
     z-index: 9;
     cursor: pointer;
   }
+}
+.rili {
+  margin-bottom: 40px;
+}
+.rili .left {
+  background-image: url('@|rili.png|');
+  width: 437px;
+  height: 363px;
+  position: relative;
+}
+.right-panel {
+  width: 554px;
+  height: 356px;
+  margin-top: 7px;
+  position: relative;
+  background-image: url('@|right-panel.png|');
+  .conn {
+    position: absolute;
+    left: 40px;
+    top: 65px;
+    width: 460px;
+    height: 260px;
+    overflow: auto;
+    h2 {
+      color: #c5983e;
+      line-height: 50px;
+    }
+    p {
+      line-height: 28px;
+      font-size: 18px;
+      text-indent: 2em;
+      color: #594224;
+    }
+  }
+}
+.xyy {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  cursor: pointer;
+}
+.syy {
+  position: absolute;
+  right: 110px;
+  bottom: 10px;
+  cursor: pointer;
 }
 </style>
